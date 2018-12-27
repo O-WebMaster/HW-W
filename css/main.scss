@@ -1,0 +1,655 @@
+.pop {font-family: 'Poppins', sans-serif;}
+.mon {font-family: 'Montserrat', sans-serif; font-size: 25.5px; }
+
+.container {
+    padding-right: 0px;
+    padding-left: 0px;
+ }
+
+ .row {
+     margin-right: 0px;
+     margin-left: 0px;
+    }
+
+
+/* .............................................Верхнее меню начало................................................*/
+
+.Background_Fon1 {
+    display: flex;
+    position: relative;
+    width: 1140px;
+    height: 1041px;
+    border-width: 0px;
+    border-style: solid;
+    justify-content: center;
+    //overflow: hidden; /* обрезаем картинку расположенную в блоке */
+}
+
+ .Fon1 {
+     position: absolute;
+     z-index: -1;
+     width: 1920px;
+ }
+
+.top-nav {
+    position: absolute; /*перемещаем на передний план относительно блока .Background_Fon1*/
+    z-index: 2;         /*перемещаем на передний план относительно блока .Background_Fon1*/
+    width: 1140px;
+    margin-top: 62px;
+}
+
+
+.top-nav-name {
+width: 118px; 
+font-family: 'Poppins', sans-serif;
+font-size: 33.5px;
+font-weight: 600;
+letter-spacing: 1px;
+color: #ffffff;
+}
+
+.top-nav-menu {
+width:641px;
+height: 20px;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+color: #ffffff;
+line-height: 1; /* пришлось добавить данное значение , а то текс уезжал ниже горизонтальной оси , т.е. смещался вниз по вертикали*/
+margin-bottom: 10px;
+}
+
+.top-nav-menu-link {
+    color: #ffffff;
+}
+.top-nav-menu-link:hover {
+    color: #ffffff;
+}
+
+
+
+.top-nav-free-start {
+   width: 242px;
+   height: 76px;
+   border-radius: 38px;
+   background-color: #ffffff;
+   color: #4085f6; /* задаем цвет шрифта*/
+   font-weight: 600; /* pflftv njkobe ihbanf*/
+   font-family: 'Montserrat', sans-serif; font-size: 25.5px; /* задаем стиль шрифта*/
+   outline: none; /* убрал стандартную гугл рамку */
+   border: 0px; /* убрал границы с кнопки*/
+   }
+
+
+
+
+/* эпп стор*/
+
+.App-Play-Store-container {
+    position: absolute;
+    z-index: 2;
+    margin-top: 138px;
+
+    .Phone1 {
+        position: relative;
+        right: 107px;
+    }
+
+
+    .App-Play-Store-block{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: flex-end;
+        width: 592px; //581 592
+        height: 311px;
+        margin-bottom: 108px;
+    
+        .Best-App-name {
+         height: 105px;   
+         font-family: 'Montserrat', sans-serif;
+         font-size: 46px;
+         color: #ffffff;
+         font-weight: 600;
+         text-align: right;
+         line-height: 1.15;
+        }
+        .Best-App-description {
+         height: 56px;
+         font-family: 'Poppins', sans-serif;
+         font-size: 20px;
+         color: #ffffff;
+         text-align: right;
+         line-height: 1.5;
+         word-spacing: 1px
+        }
+        .A-P-House {
+            display: flex;
+            justify-content: flex-end;
+            width: 592px;
+        
+            .AppStore-block {
+                width: 230px;
+                height: 81px;
+                border-radius: 40px;
+                background-color: #22233a;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 18px;
+            
+                .app-store-text {
+                 width: 92px;
+                 height: 40px;
+                 line-height: 1.15;
+                 margin-left: 23px;
+            
+                 .app-store-text1 {
+                     font-family: 'Poppins', sans-serif;
+                     font-size: 13.5px;
+                     color: #ffffff;
+                 }
+            
+                 .app-store-text2 {
+                     font-family: 'Montserrat', sans-serif;
+                     font-size: 19px;
+                     color: #ffffff;
+                     font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+   /* .............................................Верхнее меню конец................................................*/
+
+
+
+
+
+
+/* .............................................About The App начало ................................................*/
+.AA_name_description_box {
+    width: 913px;
+    height: 141px;
+    margin-top: 89px;
+    margin-bottom: 90px;
+    margin-left: auto; /*отступ слева блока авто*/
+    margin-right: auto; /*отступ блока справа авто*/
+}
+.AA_name{
+    // width: 274px; почему так не работает хотя все согласно Zeplina
+    // height: 34px; почему так не работает хотя все согласно Zeplina
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #5d5d5d;
+    line-height: 1
+}
+
+.AA_description {
+    width: 913px;
+    height: 56px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #737373;
+    line-height: 1.45;
+    padding: 0px;
+    text-align: center;}
+    
+.advantage_container {
+    width: 1140px
+}
+
+.Support_block, .Privacy_block, .Download_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 55px;
+    padding-bottom: 58px;
+
+    width: 358px;
+    height: 391px;
+    box-shadow: 0.7px 1.9px 19.6px 0.4px rgba(34, 31, 31, 0.2);
+    background-color: #ffffff;
+}
+.Support_icon_house,.Privacy_icon_house,.Download_icon_house  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 95px;
+    border-radius: 5px;
+}
+
+.romb {
+    position: absolute; /* позиционирует блок относительно родителя, выдергивая его >> возможность исп. z-index*/
+    z-index: 1;   /* задал 1 а ниже для блока .Support_ic задал 2, что позволяет второму выступать */
+    visibility:visible; /* visibility:hidden стал невидим, но все еще занимает место на странице* visibility:visible - станет видимым */
+}
+.romb_H {
+    position: absolute; /* позиционирует блок относительно родителя, выдергивая его >> возможность исп. z-index*/
+    z-index: 1;   /* задал 1 а ниже для блока .Support_ic задал 2, что позволяет второму выступать */
+    visibility:hidden; /* visibility:hidden стал невидим, но все еще занимает место на странице* visibility:visible - станет видимым */
+}
+.Support_icon, .Privacy_icon, .Download_icon {
+    position: absolute;
+    z-index: 2;
+    visibility:visible; /* visibility:hidden стал невидим, но все еще занимает место на странице* visibility:visible - станет видимым */
+}
+.Support_icon_H, .Privacy_icon_H, .Download_icon_H {
+    position: absolute;
+    z-index: 2;
+    visibility:hidden; /* visibility:hidden стал невидим, но все еще занимает место на странице* visibility:visible - станет видимым */
+}
+
+
+.Support_name, .Privacy_name,.Download_name {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 24px;
+    width: 190px;
+    line-height: 25px;
+    color: #5d5d5d;
+    text-align: center;
+    vertical-align: baseline;
+    margin-top: 42px;
+    margin-bottom: 40px;
+
+}
+
+.Support_description, .Privacy_description, .Download_description {
+    font-family: 'Poppins', sans-serif;
+    width: 294px;
+    height: 76px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #737373;
+    text-align: center;
+    word-spacing: -0.03em; /*изменияет интервал между словами*/
+
+}
+/* Ховер эфект на блоке Support :*/
+.Support_block:hover .Support_name {color: #4085f6;}
+.Support_block:hover .romb {visibility:hidden;}
+.Support_block:hover .romb_H {visibility:visible;}
+.Support_block:hover .Support_icon {visibility:hidden;}
+.Support_block:hover .Support_icon_H {visibility:visible;}
+/*конец*/
+
+/* Ховер эфект на блоке Privacy :*/
+.Privacy_block:hover .Privacy_name {color: #4085f6;}
+.Privacy_block:hover .romb {visibility:hidden;}
+.Privacy_block:hover .romb_H {visibility:visible;}
+.Privacy_block:hover .Privacy_icon {visibility:hidden;}
+.Privacy_block:hover .Privacy_icon_H {visibility:visible;}
+/*конец*/
+
+/* Ховер эфект на блоке Download :*/
+.Download_block:hover .Download_name {color: #4085f6;}
+.Download_block:hover .romb {visibility:hidden;}
+.Download_block:hover .romb_H {visibility:visible;}
+.Download_block:hover .Download_icon {visibility:hidden;}
+.Download_block:hover .Download_icon_H {visibility:visible;}
+/*конец*/
+
+
+/* .............................................About The App конец ................................................*/
+
+
+
+/* .............................................Features-The-App начало ................................................*/
+
+.Features-The-App-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: #d6d6d6;
+    width: 1140px;
+    height: 1312px;
+    margin-top: 90px;
+
+    .background-2 {
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        width: 1920px;
+    }
+
+    .FTA-head-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 913px;
+        height: 141px;
+        //background-color: #0f0101;
+        margin-top: 89px;
+
+        .FTA-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 500;
+            color: #ffffff;
+            height: 141px;
+            width: 316px;         
+            text-align: center;
+            word-spacing: -0.1em;
+            margin-top: -12px;
+
+        }
+        .FTA-description {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            height: 56px;
+            width: 913px;
+            text-align: center;
+
+        }
+
+    }
+
+    .FTA-body-box {
+        width: 1140px;
+        //background-color: #4085f6;
+        height: 710px;
+        margin-top: 99px;
+
+        .Design-Features-Friendly-Codes-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 669px;
+            height: 710px;
+            //background-color: #40f6ed;
+
+            .Design-box {
+                display: flex;
+                justify-content: space-between;
+                width: 669px;
+                height: 125px;
+                //background-color: #e4f640;
+
+                .Design-box-avatar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 77px;
+                    height: 78px;
+                    border-radius: 77px;
+                    background-color: #ffffff;
+                }
+                .Design-box-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 554px;
+                    height: 125px;
+                    //background-color: darkgoldenrod;
+
+                    .Design-box-text-name {
+                        font-family: 'Montserrat', sans-serif; 
+                        font-size: 16px;
+                        width: 184px;
+                        color: #ffffff;
+                        padding-bottom: 33px;
+                        line-height: 1.3;
+                    }
+
+                    .Design-box-text-description {
+                        width: 554px;
+                        height: 76px;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: #ffffff;
+                    }
+
+                }
+            }    
+        }
+    }
+
+}
+/* .............................................Features-The-App конец ................................................*/
+
+/* .............................................Pricing plan начало ................................................*/
+
+.Pricing-Plan-container {
+    width: 1170px;
+    height: 966px;
+    background-color: #f8f6f6;
+
+    .PP-head-box {
+        width: 913px;
+        height: 141px;
+        margin-top: 89px;
+
+        .PP-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 500;
+            color: #5d5d5d;
+            height: 35px;
+            width: 215px;         
+            text-align: center;
+            word-spacing: -0.2em;
+            margin-top: -10px;
+        }
+
+        .PP-description {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: #5d5d5d;
+            height: 56px;
+            width: 913px;
+            text-align: center;
+        }
+    }
+
+    .Basik-box {
+     max-width: 366px;
+     min-width: 366px;
+     height: 507px;
+     border-radius: 20px;
+     box-shadow: 0.7px 1.9px 5.6px 0.4px rgba(34, 31, 31, 0.24);
+     border-style: solid;
+     border-width: 3px;
+     border-color: #4085f6;
+     margin-top: 90px;
+
+     .Basik-box-name-price-access {
+        width: 137px;
+        height: 105px;
+        text-align: center;
+
+        .Basik-box-name {
+         font-family: 'Montserrat', sans-serif;
+         font-size: 24px;
+         font-weight: 600;
+         color: #5d5d5d;
+         line-height: 24px;
+        }
+        .Basik-box-price {
+            width: 65px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            color: #4085f6;
+            line-height: 36px;
+         }   
+        .Basik-box-access {
+            width: 137px;
+            height: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: #5d5d5d;
+            line-height: 14px;
+        }
+     }
+     .Basik-box-description {
+         height:139px;
+         width: 180px;
+         font-family: 'Poppins', sans-serif;
+         font-size: 15px;
+         color: #737373;
+         line-height: 15px;
+         margin-top: 57px;
+         margin-bottom: 42px;
+
+         .fas.fa-check.fa-1x {
+             color:#4085f6;
+             padding-right: 6px;
+         }
+         .fas.fa-times.fa-1x {
+            color:#f33131;
+            padding-right: 6px;
+        }
+     }
+     .Basik-box-batton {
+        width: 205px;
+        height: 55px;
+        border-radius: 27px;
+        background-color: #ffffff;
+        color: #4085f6; /* задаем цвет шрифта*/
+        font-weight: 500; /* pflftv njkobe ihbanf*/
+        font-family: 'Poppins', sans-serif; /* задаем стиль шрифта*/
+        font-size: 18px;
+        outline: none; /* убрал стандартную гугл рамку */
+        border: 2px; /* убрал границы с кнопки*/
+        border-color: #226be2;
+        border-width: 2px;
+        border-style: solid;
+     }
+    }
+}
+
+/* Ховер эфект на блоке .Basik-box :*/
+.Basik-box:hover {
+    background-image: linear-gradient(to left, #4085f6, #1760d7);
+    height: 557px;
+    .Basik-box-name-price-access {
+        .Basik-box-name,.Basik-box-price, .Basik-box-access  {
+            color: #ffffff;
+        }
+    }
+    .Basik-box-description {
+        color: #ffffff;
+
+        .fas.fa-check.fa-1x {
+            color: #ffffff;
+        }
+    }
+    .Basik-box-batton {
+        border-width: 0px;
+    }
+
+
+
+    
+}
+
+/* .............................................Pricing plan конец ................................................*/
+
+
+/* .............................................MAP начало ................................................*/
+.Map { 
+    width: 1140px;
+    max-height: 400px;
+}
+
+/* .............................................MAP конец ................................................*/
+
+
+
+
+
+/* .............................................Contact начало ................................................*/
+.contact-container {
+    min-width: 1924px;
+    height: 712px;
+    background-color: #f7f7f7;
+
+    .contact-head-box {
+        height: 116px;
+        margin-top: 73px;
+        width: 1170px;
+        margin-bottom: 67px;
+
+        .contact-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 38px;
+            font-weight: 600;
+            color: #5d5d5d;
+            height: 38px;
+            width: 295px;         
+            text-align: center;
+            word-spacing: -0.2em;
+            line-height: 1.0;
+            margin-bottom: 38px;
+        }
+
+        .contact-description {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14.5px;
+            color: #5d5d5d;
+            height: 40px;
+            width: 523px;
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+    .contact-body-box {
+        width: 1140px;
+        background-color: #e6f331;
+
+        .contact-lacation-box {
+            width: 379px;
+            height: 313px;
+            padding: 0px;
+            background-color: #f33131;
+            padding: 48px 0 48px 26px;
+
+            
+        }
+        .contact-form-box {
+            width: 743px;
+            height: 382px;
+            padding: 0px;
+            background-color: #f3d631;
+            padding-left: 14px;
+
+            #inputName, #inputEmail {
+                height: 48px;
+                margin-bottom: 26px;
+            }
+            #YourMassege {
+                height: 163px;
+                margin-bottom: 26px;
+                padding-bottom: 135px;
+            }
+            .btn.btn-default {
+                width: 158px;
+                height: 45px;
+                background-color: #226be2;
+            }
+        }
+
+
+
+    }
+
+
+}
+/*.name1 {
+    height: 150px;
+    padding-bottom: 75px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #e6f331;
+}*/
