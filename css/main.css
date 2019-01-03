@@ -8,16 +8,16 @@
   font-size: 25.5px;
 }
 
-.container {
-  padding-right: 0px;
-  padding-left: 0px;
-}
+/*.container {
+    padding-right: 0px;
+    padding-left: 0px;
+ }
 
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
+ .row {
+     margin-right: 0px;
+     margin-left: 0px;
+    }
+*/
 /* .............................................Верхнее меню начало................................................*/
 .Background_Fon1 {
   display: -webkit-box;
@@ -92,6 +92,7 @@
   /* убрал стандартную гугл рамку */
   border: 0px;
   /* убрал границы с кнопки*/
+  cursor: pointer;
 }
 
 /* эпп стор*/
@@ -154,7 +155,7 @@
   width: 592px;
 }
 
-.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block {
+.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block {
   width: 230px;
   height: 81px;
   border-radius: 40px;
@@ -171,20 +172,20 @@
   margin-left: 18px;
 }
 
-.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text {
+.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text, .App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .Play-store-text, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .app-store-text, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .Play-store-text {
   width: 92px;
   height: 40px;
   line-height: 1.15;
   margin-left: 23px;
 }
 
-.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text .app-store-text1 {
+.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text .app-store-text1, .App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text .Play-store-text1, .App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .Play-store-text .app-store-text1, .App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .Play-store-text .Play-store-text1, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .app-store-text .app-store-text1, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .app-store-text .Play-store-text1, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .Play-store-text .app-store-text1, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .Play-store-text .Play-store-text1 {
   font-family: 'Poppins', sans-serif;
   font-size: 13.5px;
   color: #ffffff;
 }
 
-.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text .app-store-text2 {
+.App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text .app-store-text2, .App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .app-store-text .Play-store-text2, .App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .Play-store-text .app-store-text2, .App-Play-Store-container .App-Play-Store-block .A-P-House .AppStore-block .Play-store-text .Play-store-text2, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .app-store-text .app-store-text2, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .app-store-text .Play-store-text2, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .Play-store-text .app-store-text2, .App-Play-Store-container .App-Play-Store-block .A-P-House .Playstore-block .Play-store-text .Play-store-text2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 19px;
   color: #ffffff;
@@ -534,8 +535,8 @@
 /* .............................................Features-The-App конец ................................................*/
 /* .............................................Pricing plan начало ................................................*/
 .Pricing-Plan-container {
-  width: 1170px;
-  height: 966px;
+  min-height: 966px;
+  min-width: 1920px;
   background-color: #f8f6f6;
 }
 
@@ -567,7 +568,6 @@
 }
 
 .Pricing-Plan-container .Basik-box {
-  max-width: 366px;
   min-width: 366px;
   height: 507px;
   border-radius: 20px;
@@ -576,7 +576,8 @@
   border-style: solid;
   border-width: 3px;
   border-color: #4085f6;
-  margin-top: 90px;
+  margin-top: 115px;
+  margin-bottom: 115px;
 }
 
 .Pricing-Plan-container .Basik-box .Basik-box-name-price-access {
@@ -613,7 +614,7 @@
 
 .Pricing-Plan-container .Basik-box .Basik-box-description {
   height: 139px;
-  width: 180px;
+  width: 185px;
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   color: #737373;
@@ -651,6 +652,8 @@
   border-color: #226be2;
   border-width: 2px;
   border-style: solid;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* Ховер эфект на блоке .Basik-box :*/
@@ -658,6 +661,8 @@
   background-image: -webkit-gradient(linear, right top, left top, from(#4085f6), to(#1760d7));
   background-image: linear-gradient(to left, #4085f6, #1760d7);
   height: 557px;
+  margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .Basik-box:hover .Basik-box-name-price-access .Basik-box-name, .Basik-box:hover .Basik-box-name-price-access .Basik-box-price, .Basik-box:hover .Basik-box-name-price-access .Basik-box-access {
@@ -677,16 +682,200 @@
 }
 
 /* .............................................Pricing plan конец ................................................*/
+/* .............................................Screenshots начало ................................................*/
+.Screenshots-container .Screenshots-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #5d5d5d;
+  height: 35px;
+  width: 309px;
+  text-align: center;
+  word-spacing: -0.2em;
+  margin-top: -10px;
+  margin-top: 76px;
+  margin-bottom: 51px;
+}
+
+.Screenshots-container .Screenshots-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #5d5d5d;
+  height: 56px;
+  width: 798px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.carousel-inner.carousel-1 {
+  width: 1170px;
+}
+
+.btn-carousel {
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  padding: 0;
+  outline: none !important;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-box-shadow: 1.7px 4.7px 7.8px 0.2px rgba(58, 58, 58, 0.3);
+          box-shadow: 1.7px 4.7px 7.8px 0.2px rgba(58, 58, 58, 0.3);
+  background-color: #4085f6;
+  margin-right: 26px;
+  margin-left: 26px;
+  margin-bottom: 90px;
+  margin-top: 49px;
+}
+
+.btn-carousel .fas.fa-arrow-right, .btn-carousel .fas.fa-arrow-left {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* .............................................Screenshots конец ................................................*/
+/* .............................................TALK начало ................................................*/
+.Talk-container {
+  width: 1922px;
+  height: 671px;
+  background-image: linear-gradient(250deg, #4085f6, #1760d7);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Talk-container .Talk-head-box {
+  margin-top: 90px;
+  margin-bottom: 49px;
+  width: 479px;
+  height: 24px;
+}
+
+.Talk-container .Talk-head-box .Talk-head-name {
+  width: 479px;
+  height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  word-spacing: -0.9px;
+}
+
+.Talk-container .Talk-body-box {
+  width: 1170px;
+  height: 350px;
+}
+
+.Talk-container .Talk-body-box .client-box {
+  position: relative;
+  height: 350px;
+  width: 560px;
+}
+
+.Talk-container .Talk-body-box .client-box .client-avatar {
+  position: absolute;
+  z-index: 3;
+  height: 118px;
+  width: 118px;
+  border-radius: 118px;
+  background-color: aqua;
+  background-position: center;
+  border: solid;
+  border-width: 2px;
+  border-color: #ffffff;
+}
+
+.Talk-container .Talk-body-box .client-box .client-info {
+  margin-top: 74px;
+  height: 277px;
+  width: 560px;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.Talk-container .Talk-body-box .client-box .client-info .client-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 63px;
+}
+
+.Talk-container .Talk-body-box .client-box .client-info .client-job {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.Talk-container .Talk-body-box .client-box .client-info .client-talk {
+  width: 368px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-top: 36px;
+  text-align: center;
+  word-spacing: -1.8px;
+}
+
+.Talk-container .Talk-body-box .client-box .client-info .client-talk::before {
+  /* псевдоэлемент с библиотекой фонтосом + выравниваня и отступ */
+  content: "\f10d";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 27px;
+  padding-right: 10px;
+  vertical-align: -5px;
+}
+
+.Talk-container .Talk-body-box .client-box .client-info .client-talk::after {
+  /* псевдоэлемент с библиотекой фонтосом + выравниваня и отступ */
+  content: "\f10e";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 27px;
+  padding-left: 10px;
+  vertical-align: -5px;
+}
+
+.talk-control-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  padding: 0;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  margin-top: 50px;
+  opacity: 0.5;
+}
+
+.carousel-indicators {
+  width: 300px;
+  height: 50px;
+  background-color: #f33131;
+}
+
+/* .............................................TALK конец ................................................*/
 /* .............................................MAP начало ................................................*/
 .Map {
-  width: 1140px;
+  width: 1920px;
   max-height: 400px;
 }
 
 /* .............................................MAP конец ................................................*/
 /* .............................................Contact начало ................................................*/
 .contact-container {
-  min-width: 1924px;
+  min-width: 1920px;
   height: 712px;
   background-color: #f7f7f7;
 }
@@ -723,23 +912,50 @@
 
 .contact-container .contact-body-box {
   width: 1140px;
-  background-color: #e6f331;
 }
 
 .contact-container .contact-body-box .contact-lacation-box {
   width: 379px;
   height: 313px;
   padding: 0px;
-  background-color: #f33131;
+  background-color: #ffffff;
   padding: 48px 0 48px 26px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17.5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #3b3b3b;
+}
+
+.contact-container .contact-body-box .contact-lacation-box .location-box {
+  height: 53px;
+}
+
+.contact-container .contact-body-box .contact-lacation-box .fas.fa-map, .contact-container .contact-body-box .contact-lacation-box .fa-phone, .contact-container .contact-body-box .contact-lacation-box .fa-envelope {
+  font-size: 20px;
+  color: #226be2;
+  margin-right: 16px;
+}
+
+.contact-container .contact-body-box .contact-lacation-box .location-description {
+  margin-left: 43px;
+  font-size: 15.5px;
+  font-weight: 300;
+  color: #585858;
+  line-height: 16.0px;
 }
 
 .contact-container .contact-body-box .contact-form-box {
   width: 743px;
   height: 382px;
   padding: 0px;
-  background-color: #f3d631;
   padding-left: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #a2a2a2;
 }
 
 .contact-container .contact-body-box .contact-form-box #inputName, .contact-container .contact-body-box .contact-form-box #inputEmail {
@@ -757,8 +973,46 @@
   width: 158px;
   height: 45px;
   background-color: #226be2;
+  font-family: Poppins;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #ffffff;
 }
 
+/* .............................................Contact конец ................................................*/
+/* .............................................FOOTER начало ................................................*/
+.Foter-container {
+  width: 1920px;
+  height: 270px;
+  background-color: #13253b;
+}
+
+.Foter-container .Footer-text-box {
+  width: 386px;
+  height: 17px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.55px;
+  color: #ffffff;
+  margin-right: 317px;
+}
+
+.Foter-container .Footer-link-box {
+  width: 469px;
+  height: 29px;
+}
+
+.Foter-container .Footer-link-box .fab.fa-vk, .Foter-container .Footer-link-box .fa-twitter, .Foter-container .Footer-link-box .fa-instagram, .Foter-container .Footer-link-box .fa-google-plus-g, .Foter-container .Footer-link-box .fa-behance, .Foter-container .Footer-link-box .fa-basketball-ball {
+  color: #ffffff;
+  font-size: 29px;
+}
+
+.Foter-container .Footer-link-box .fab.fa-vk:hover, .Foter-container .Footer-link-box .fa-twitter:hover, .Foter-container .Footer-link-box .fa-instagram:hover, .Foter-container .Footer-link-box .fa-google-plus-g:hover, .Foter-container .Footer-link-box .fa-behance:hover, .Foter-container .Footer-link-box .fa-basketball-ball:hover {
+  color: #226be2;
+}
+
+/* .............................................FOOTER конец ................................................*/
 /*.name1 {
     height: 150px;
     padding-bottom: 75px;
